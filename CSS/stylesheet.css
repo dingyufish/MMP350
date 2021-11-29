@@ -99,6 +99,12 @@ section .work_2{
 }
 
 /* ================= About page  ================= */
+.card1_subtitle{
+grid-area: 2/3;
+font-size: 3em;
+color: aqua;
+}
+
 .about_warpper{
   display: grid;
   grid-template-rows: 1fr;
@@ -126,136 +132,235 @@ margin: 20px;
 }
 
 /* ================= home page  ================= */
-.home_warpper{
+body {
   display: grid;
-  grid-template-rows:700px 500px 400px;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-.hello_header{
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(7,1fr);
-
-}
-.hello_box{
-  border: black solid;
-  border-radius: 40px;
-  grid-column: 1/4;
-  grid-row: 1/4;
-
-}
-.hello_box2{
-  border: black solid;
-  border-radius: 40px;
-  grid-column: 3/5;
-  grid-row: 3/7;
-  align-content: center;
-}
-.hello_content{
-  margin:10%;
-}
-.hello_title{
-  grid-column: 1/4;
-  grid-row: 2/3;
- 
-}
-.hello_title,h1{
-  font-size: 50px;
+  height: 100vh;
+  grid-template: auto 1fr auto / auto 1fr auto
 }
 
-.hello_pic ,img{
-border-radius: 50%;
-grid-column: 1/3;
-grid-row: 4/5;
-width:50%;
-height: 50%;
+
+header {
+  background: #023E73;
+  padding: 2rem;
+  grid-column: 1 / 4;
+  color:#EAF2DC;
+}
+.left-sidebar {
+  background:  #04D98B;
+  grid-column: 1 / 2;
 }
 
+main {
+  background: #04D98B;
+  grid-column: 2 / 3;
+}
+.home_intro{
+  background-color: #04D98B;
+  color: #EAF2DC;
+  text-align: center;
+  
+}
+h1{
+  font-family:'Fira Sans', sans-serif;
+}
+h1.hello_title{
+font-size: 70px;
+font-family:'Fira Sans', sans-serif;
+text-align: center;
+}
+h2{
+  font-family:  'Fira Code';
+  font-weight: lighter;
+}
 .intro_mywork{
-grid-row: 5/8;
-grid-column: 1/4;
-border: solid black;
-border-radius: 40px;
+  text-align: center;
+  padding-top: 50px;
 }
-.home_workitem{
-display: grid;
-grid-template-columns: 40px 1fr 1fr 40px;
-grid-template-rows:200px 200px;
-margin-top: 40px;
+h1.mywork_title{
+font-family:'Fira Sans';
+color: #EAF2DC;
+font-size: 70px;
+text-align: center;
 }
-.work-itme1{
-  border:black solid;
-  border-radius: 40px;
+.card1{
+  width:800px ;
+  height: 320px;
+  border-style: solid;
+  border-color: #023E73;
+  border-width: 0.25em;
+  border-radius: 1.5em;
+  background-color: #EAF2DC;
+  display: grid;
+  grid-template-columns: 40% 2fr;
+  grid-template-rows: 25% 1fr;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-family: 'Fira Sans';
 
-  grid-column: 2/4;
 }
-.work1_itme{
-  border: black solid;
-  border-radius: 40px;
-  margin-top: 20px;
-
-  grid-column: 2/4;
+.card1title{
+  grid-column: 1/2;
+  text-align: center;
 }
-
+.card1image{
+  grid-column: 1/2;
+  grid-row:2/3;
+  text-align: center;
+}
+.card1image img {
+  margin-top: 1em;
+  width: 250px;
+  height: 200px;
+  text-align: center;
+}
+.card1content{
+  width: 400px;
+  height: 200px;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-size: 18px;
+  font-family:'Fira Code';
+  font-weight: lighter;
+}
+.more-mywork{
+  font-weight: bolder;
+}
 .hello_contactme{
-display: grid;
-grid-template-columns: repeat(2,1fr);
-grid-template-rows: repeat(4,1fr);
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
 }
-.meidapic{
-  width: 20%;
-  height: 20%;
-  border-radius: 20px;
-  background-color:grey;
+.fishicon img{
+  width: 50%;
+  height: 50%;
+  margin-bottom: 40%;
 }
+.bluedot{
+  width: 200px;
+  height: 200px;
+  background-color: #023E73;
+  border-radius: 50%;
+}
+h1.contactme{
+  font-size: 70px;
+  color: #EAF2DC;
+  text-align: center;
+}
+.contact-right{
+  background-color: #023E73;
+  border-radius: 50%;
+
+}
+
+.right-sidebar {
+  background:  #04D98B;
+  grid-column: 3 / 4;
+}
+
+footer {
+  background: #023E73;
+  padding: 4rem;
+  text-align: center;
+  grid-column: 1 / 4;
+}
+
+
+.left-sidebar,
+.right-sidebar {
+  padding: 1rem;
+}
+
+img{
+  width: 360px;
+  height: 360px;
+
+}
+.picding{
+  text-align: center;
+}
+
 
 /* ================= Navbar&footer  ================= */
- .navbar{
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: 80px;
-  font-size: 20px;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* Add a dark grey background color to the top navigation */
+.topnav {
+  background-color: #023E73;
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
 }
 
-li {
-  float: left;
+/* Remove default list styling: remove bullet points from the list and remove default margin */
+.topnav ul{
+list-style-type:none;
+margin:0;
+padding: 0; 
+}
+.topnav ul li{
+margin:1em;
+padding: 0;
+
 }
 
-li a {
+/* style the site title */
+.topnav h1{
+/*this keeps in line with other items in nav */
+margin: 0;
+padding: 0;
+
+/* style this however you want your title styled */
+font-family: sans-serif;
+}
+
+/* Style the links inside the navigation bar */
+.topnav ul li{
+float: left;
+text-align: center;
+}
+
+.topnav a {
+color: #f2f2f2;
+display: block;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #EAF2DC;
+  color: #023E73;
+
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 1000 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 700px) {
+.topnav li:not(:first-child) {
+  display: none;
+}
+.topnav li.icon {
+  float: right;
   display: block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
-li a:hover{
-  color: white;
-  background-color: black;
 }
 
-.nav_logo{
-background-color: grey;
-color: white;
-width: 60px;
-height: 60px;
-border-radius: 10px;
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1000px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive li.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/*   .topnav.responsive a { */
+.topnav.responsive li {  
+  float: none;
+  display: block;
+  text-align: left;
+}
 }
 
-footer{
-  background-color: rgb(182, 182, 182);
-  width: auto;
-  height: 200px;
-}
 
 /* ================= Use Border Box model ================= */
  .intro_header{
@@ -280,11 +385,6 @@ height: 200px;
 }
 
 /* ================= Basic Responsive Images and Video ================= */
-img,video{
-  width: auto;
-  height: auto;
-  max-width: 100%;
-}
 
 /* ================= Responsive Embedded Video ================= */
 /* to use this add a div with class videoWrapper around the iframe markup copied from YouTube or Vimeo. Then also add a ratio-16-9 (most common) or ratio-4-3 class to the wrapper depending on the aspect ratio of your video */
