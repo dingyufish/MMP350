@@ -279,12 +279,10 @@ footer {
   padding: 1rem;
 }
 
-img{
-  /* width: 360px; */
-  /* height: 360px; */
-}
-.picding{
+.picding img{
   text-align: center;
+  height: 400px;;
+  width: 400px;
 }
 
 
