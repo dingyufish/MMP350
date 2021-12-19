@@ -343,10 +343,13 @@ h1.contactme{
     text-align: center;
   }
   h2,.media{
-    margin-left: 20%;
-    font-size: 2.5em;
-    color: #EAF2DC;
 
+    font-size: 2.5em;
+
+  }
+  .media{
+    margin-left: 2.5em;
+    color: #EAF2DC;
   }
   .contact-right{
     background-color: #023E73;
