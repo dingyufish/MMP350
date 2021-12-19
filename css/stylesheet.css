@@ -106,10 +106,11 @@ body{
  
   
 /* ================= About page  ================= */
-.card1_subtitle{
-grid-area: 2/3;
-font-size: 3em;
-color: aqua;
+p,.card1_subtitle{
+
+font-size: 30px;
+
+
 }
 
 .about_warpper{
